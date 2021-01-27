@@ -69,7 +69,7 @@ endif ( )
 ## System dependencies are found with CMake's conventions
 
 # OpenCV
-find_package(OpenCV 3 REQUIRED)
+find_package(OpenCV 4 REQUIRED)
 if(OpenCV_VERSION VERSION_LESS "3.3.0")
   message("ENABLE Internal ParallelLoopBodyLambdaWrapper Class definition (OpenCV < 3.3.0)")
   add_definitions(-DOPENCV_LAMBDA_MISSING)
